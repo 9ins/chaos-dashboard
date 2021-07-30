@@ -1,0 +1,24 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<!-- 클래스 로딩 정보 빈 설정 -->
+<bean id="MemoryPoolInfoMBean" type="mbean" class_name="java.management.MemoryPoolInfoMBean" object_name="java.lang:type=ClassLoading">
+	<!-- 모니터링 설정 -->
+	<monitoring is_monitoring="true">5000</monitoring>
+	
+	<!-- 에이전트 설정  -->
+	<agent service_url="service:jmx:rmi://127.0.0.1:9292/chaos_agent" retry_interval="1000"/>
+	
+	<!-- 그래프 설정 -->
+	<graph type="circle" title="CLASS LOADING INFORMATION." graph_width="500" graph_height="250" x_num="500" limit="" unit="MB" is_label="true" is_per="false" y_index="1024, 2048, 4096">
+		<element name="CURRENT LOADED CLASSES" mapping="getLoadedClassCount" color="180,180,220"/>
+		<element name="UNLOADED CLASSES" mapping="getUnloadedClassCount" color="220,180,180"/>
+	</graph>
+
+	<!-- 테이블 설정 -->
+	<table title="메모리 정보" width="300" height="250">
+		<column name="CURRENT LOADED CLASSES" mapping="getLoadedClassCount" width="200" align="right" editable="false" color="255,255,255"/>
+		<column name="UNLOADED CLASSES" mapping="getUnloadedClassCount" width="200" align="right" editable="false" color="255,255,255"/>
+		<column name="TOTAL LOADED CLASSES" mapping="getTotalLoadedClassCount" width="200" align="right" editable="false" color="255,255,255"/>
+		<column name="TIME STEMP" mapping="getTimeStemp" width="200" align="right" editable="false" color="255,255,255"/>
+	</table>
+</bean>
+
