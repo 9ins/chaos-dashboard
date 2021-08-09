@@ -26,7 +26,8 @@ $RECYCLE.BIN/
 .LSOverride
 
 # Icon must ends with two \r.
-Icon
+Icon
+
 
 # Thumbnails
 ._*
@@ -40,3 +41,4 @@ Icon
 
 # Ignore Gradle build output directory
 build
+gradle.properties
