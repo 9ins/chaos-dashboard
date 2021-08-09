@@ -5,8 +5,7 @@ Bundle-SymbolicName: CHAOS_MONITOR
 Bundle-Version: 1.0.0.qualifier
 Bundle-ClassPath: CHAOS_MONITOR.jar,
  lib/jai_codec.jar,
- lib/jai_core.jar,
- lib/chaos_graph.jar
+ lib/jai_core.jar, 
 Export-Package: com.sun.media.jai.codec,
  com.sun.media.jai.codecimpl,
  com.sun.media.jai.codecimpl.fpx,
