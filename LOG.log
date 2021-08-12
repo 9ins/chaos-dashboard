@@ -1,15 +1,12 @@
-[Tue Aug 19 07:22:24 KST 2014] Failed to retrieve RMIServer stub: javax.naming.ServiceUnavailableException [Root exception is java.rmi.ConnectException: Connection refused to host: localhost; nested exception is: 
-	java.net.ConnectException: Connection refused: connect] class : org.chaos.mgmt.client.ChaosMgmtClient	LOG LINE : 277
-	at javax.management.remote.rmi.RMIConnector.connect(Unknown Source)
-	at javax.management.remote.JMXConnectorFactory.connect(Unknown Source)
-	at org.chaos.mgmt.client.ChaosMgmtClient$JMXReconnector.run(ChaosMgmtClient.java:272)
-[Tue Aug 19 07:22:27 KST 2014] Failed to retrieve RMIServer stub: javax.naming.ServiceUnavailableException [Root exception is java.rmi.ConnectException: Connection refused to host: localhost; nested exception is: 
-	java.net.ConnectException: Connection refused: connect] class : org.chaos.mgmt.client.ChaosMgmtClient	LOG LINE : 277
-	at javax.management.remote.rmi.RMIConnector.connect(Unknown Source)
-	at javax.management.remote.JMXConnectorFactory.connect(Unknown Source)
-	at org.chaos.mgmt.client.ChaosMgmtClient$JMXReconnector.run(ChaosMgmtClient.java:272)
-[Tue Aug 19 07:22:30 KST 2014] Failed to retrieve RMIServer stub: javax.naming.ServiceUnavailableException [Root exception is java.rmi.ConnectException: Connection refused to host: localhost; nested exception is: 
-	java.net.ConnectException: Connection refused: connect] class : org.chaos.mgmt.client.ChaosMgmtClient	LOG LINE : 277
-	at javax.management.remote.rmi.RMIConnector.connect(Unknown Source)
-	at javax.management.remote.JMXConnectorFactory.connect(Unknown Source)
-	at org.chaos.mgmt.client.ChaosMgmtClient$JMXReconnector.run(ChaosMgmtClient.java:272)
+[Mon Aug 09 15:38:39 KST 2021] Can't draw graph with given graph elements type: AREA                                     class : org.chaostocosmos.chaosdashboard.client.ChaosMgmtClientFrame	LOG LINE : 193
+	at org.chaostocosmos.chaosgraph.awt2d.CircleGraph.<init>(CircleGraph.java:68)
+	at org.chaostocosmos.chaosgraph.awt2d.CircleGraph.<init>(CircleGraph.java:54)
+	at org.chaostocosmos.chaosdashboard.client.ChaosMgmtClientFrame.initGUI(ChaosMgmtClientFrame.java:155)
+	at org.chaostocosmos.chaosdashboard.client.ChaosMgmtClientFrame.<init>(ChaosMgmtClientFrame.java:104)
+	at org.chaostocosmos.chaosdashboard.client.ChaosMgmtClient.<init>(ChaosMgmtClient.java:108)
+	at org.chaostocosmos.chaosdashboard.ChaosMgmtClientTest.main(ChaosMgmtClientTest.java:9)
+[Mon Aug 09 15:38:43 KST 2021] Failed to retrieve RMIServer stub: javax.naming.ServiceUnavailableException [Root exception is java.rmi.ConnectException: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect] class : org.chaostocosmos.chaosdashboard.client.ChaosMgmtClient	LOG LINE : 249
+	at java.management.rmi/javax.management.remote.rmi.RMIConnector.connect(RMIConnector.java:370)
+	at java.management/javax.management.remote.JMXConnectorFactory.connect(JMXConnectorFactory.java:270)
+	at org.chaostocosmos.chaosdashboard.client.ChaosMgmtClient$JMXReconnector.run(ChaosMgmtClient.java:245)

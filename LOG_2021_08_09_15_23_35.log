@@ -1,0 +1,19 @@
+[Mon Aug 09 15:18:26 KST 2021] null                                                                                      class : org.chaostocosmos.chaosdashboard.client.ChaosMgmtClientFrame	LOG LINE : 191
+	at java.base/java.util.AbstractList.add(AbstractList.java:153)
+	at java.base/java.util.AbstractList.add(AbstractList.java:111)
+	at org.chaostocosmos.chaosgraph.GraphElements.addGraphElement(GraphElements.java:214)
+	at org.chaostocosmos.chaosgraph.GraphElements.addElement(GraphElements.java:198)
+	at org.chaostocosmos.chaosdashboard.client.ChaosMgmtClientFrame.initGUI(ChaosMgmtClientFrame.java:143)
+	at org.chaostocosmos.chaosdashboard.client.ChaosMgmtClientFrame.<init>(ChaosMgmtClientFrame.java:103)
+	at org.chaostocosmos.chaosdashboard.client.ChaosMgmtClient.<init>(ChaosMgmtClient.java:108)
+	at org.chaostocosmos.chaosdashboard.client.ChaosMgmtClient.main(ChaosMgmtClient.java:263)
+[Mon Aug 09 15:18:31 KST 2021] Failed to retrieve RMIServer stub: javax.naming.ServiceUnavailableException [Root exception is java.rmi.ConnectException: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect] class : org.chaostocosmos.chaosdashboard.client.ChaosMgmtClient	LOG LINE : 249
+	at java.management.rmi/javax.management.remote.rmi.RMIConnector.connect(RMIConnector.java:370)
+	at java.management/javax.management.remote.JMXConnectorFactory.connect(JMXConnectorFactory.java:270)
+	at org.chaostocosmos.chaosdashboard.client.ChaosMgmtClient$JMXReconnector.run(ChaosMgmtClient.java:245)
+[Mon Aug 09 15:18:35 KST 2021] Failed to retrieve RMIServer stub: javax.naming.ServiceUnavailableException [Root exception is java.rmi.ConnectException: Connection refused to host: localhost; nested exception is: 
+	java.net.ConnectException: Connection refused: connect] class : org.chaostocosmos.chaosdashboard.client.ChaosMgmtClient	LOG LINE : 249
+	at java.management.rmi/javax.management.remote.rmi.RMIConnector.connect(RMIConnector.java:370)
+	at java.management/javax.management.remote.JMXConnectorFactory.connect(JMXConnectorFactory.java:270)
+	at org.chaostocosmos.chaosdashboard.client.ChaosMgmtClient$JMXReconnector.run(ChaosMgmtClient.java:245)
